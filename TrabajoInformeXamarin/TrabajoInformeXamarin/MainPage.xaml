@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:TrabajoInformeXamarin"
+             x:Class="TrabajoInformeXamarin.MainPage">
+    <ContentPage.Content>
+
+        <Grid>
+            <Image Source="imgAula.jpg" Aspect="AspectFill"/>
+            <BoxView Color="#4AE542" Opacity="0.8"/>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <Image Grid.Row="0" Source="logo_unlam.png" WidthRequest="100" HeightRequest="100" Margin="0,58,0,30"/>
+    
+               
+                <StackLayout Grid.Row="1" Padding="30,20">
+                    <Entry x:Name="email" Placeholder="Correo Electronico" PlaceholderColor="White"/>
+                    <Entry x:Name="contrasena" Placeholder="Contraseña" PlaceholderColor="White" IsPassword="True"/>
+                    <Button x:Name="Login" Clicked="ProcedimientoDeLogin" Text="Iniciar Sesion" BackgroundColor="White" BorderRadius="20" TextColor="#4AE542"/>
+                   
+                </StackLayout>
+
+            </Grid>
+
+        </Grid>
+        
+    </ContentPage.Content>
+   
+
+</ContentPage>
